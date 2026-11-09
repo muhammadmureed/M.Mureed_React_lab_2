@@ -13,7 +13,7 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <Box sx={{ bgcolor: '#111827', color: '#9ca3af', pt: 8, pb: 5 }}>
+    <Box component="footer" sx={{ bgcolor: '#111827', color: '#9ca3af', pt: { xs: 6, md: 8 }, pb: 5 }}>
       <Container maxWidth="lg">
         <Stack
           direction={{ xs: 'column', md: 'row' }}
@@ -31,23 +31,14 @@ export default function Footer() {
             </Typography>
           </Box>
 
-          <Stack direction="row" spacing={3}>
-            <Link href="#privacy" underline="hover" color="inherit">
-              Privacy Policy
-            </Link>
-            <Link href="#terms" underline="hover" color="inherit">
-              Terms of Service
-            </Link>
-            <Link href="#support" underline="hover" color="inherit">
-              Support
-            </Link>
-            <Link href="#contact" underline="hover" color="inherit">
-              Contact
-            </Link>
+          <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1.5, sm: 3 }}>
+            <Link href="#home" underline="hover" color="inherit">Home</Link>
+            <Link href="#features" underline="hover" color="inherit">Features</Link>
+            <Link href="#contact" underline="hover" color="inherit">Contact</Link>
           </Stack>
 
           <Stack direction="row" spacing={1}>
-            <IconButton color="inherit" size="small" aria-label="GitHub">
+            <IconButton color="inherit" size="small" aria-label="GitHub" href="https://github.com/muhammadmureed">
               <GitHubIcon fontSize="small" />
             </IconButton>
             <IconButton color="inherit" size="small" aria-label="LinkedIn">
@@ -62,7 +53,7 @@ export default function Footer() {
         <Divider sx={{ borderColor: '#374151', mb: 3 }} />
 
         <Typography variant="body2" align="center" color="#6b7280">
-          &copy; {year} DevLaunch. Created by M. Mureed. All rights reserved.
+          &copy; {year} DevLaunch. Created by Muhammad Mureed. All rights reserved.
         </Typography>
       </Container>
     </Box>

@@ -13,13 +13,13 @@ import CloudQueueIcon from '@mui/icons-material/CloudQueue'
 
 export default function Features() {
   return (
-    <Box id="features" sx={{ py: 10, bgcolor: '#ffffff' }}>
+    <Box component="section" id="features" sx={{ py: { xs: 6, md: 10 }, bgcolor: '#ffffff' }}>
       <Container maxWidth="lg">
         <Box sx={{ textAlign: 'center', mb: 6 }}>
           <Typography variant="overline" color="primary" fontWeight="bold" letterSpacing={1}>
             WHY CHOOSE US
           </Typography>
-          <Typography variant="h4" component="h2" fontWeight="bold" sx={{ mt: 1 }}>
+          <Typography variant="h4" component="h2" fontWeight="bold" sx={{ mt: 1, fontSize: { xs: '1.75rem', md: '2.25rem' } }}>
             Engineered for Modern Web Teams
           </Typography>
           <Typography variant="body1" color="text.secondary" sx={{ mt: 1.5, maxWidth: 600, mx: 'auto' }}>
@@ -42,7 +42,7 @@ export default function Features() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" color="primary">Learn More</Button>
+                <Button size="small" color="primary" href="#contact">Get Started</Button>
               </CardActions>
             </Card>
           </Grid>
@@ -61,7 +61,7 @@ export default function Features() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" color="primary">Learn More</Button>
+                <Button size="small" color="primary" href="#contact">Get Started</Button>
               </CardActions>
             </Card>
           </Grid>
@@ -80,7 +80,7 @@ export default function Features() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" color="primary">Learn More</Button>
+                <Button size="small" color="primary" href="#contact">Get Started</Button>
               </CardActions>
             </Card>
           </Grid>

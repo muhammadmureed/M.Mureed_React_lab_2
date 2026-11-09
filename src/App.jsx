@@ -3,6 +3,7 @@ import Box from '@mui/material/Box'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Features from './components/Features'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
       <Box component="main" sx={{ flexGrow: 1 }}>
         <Hero />
         <Features />
+        <Contact />
       </Box>
       <Footer />
     </Box>
