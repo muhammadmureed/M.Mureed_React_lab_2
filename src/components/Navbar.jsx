@@ -13,14 +13,15 @@ import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemText from '@mui/material/ListItemText'
 import MenuIcon from '@mui/icons-material/Menu'
-import RocketLaunchIcon from '@mui/icons-material/RocketLaunch'
+import CodeIcon from '@mui/icons-material/Code'
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   const navLinks = [
-    { title: 'Home', href: '#home' },
-    { title: 'Features', href: '#features' },
+    { title: 'About', href: '#about' },
+    { title: 'Projects', href: '#projects' },
+    { title: 'Skills', href: '#skills' },
     { title: 'Contact', href: '#contact' },
   ]
 
@@ -33,9 +34,9 @@ export default function Navbar() {
       <Container maxWidth="lg">
         <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
           <Stack direction="row" spacing={1} alignItems="center">
-            <RocketLaunchIcon color="primary" />
+            <CodeIcon color="primary" />
             <Typography variant="h6" fontWeight="bold" color="text.primary">
-              DevLaunch
+              M. Mureed
             </Typography>
           </Stack>
 
@@ -49,7 +50,7 @@ export default function Navbar() {
 
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Button variant="contained" color="primary" href="#contact">
-              Get Started
+              Hire Me
             </Button>
           </Box>
 
@@ -77,7 +78,7 @@ export default function Navbar() {
       >
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', pt: 2 }}>
           <Typography variant="h6" sx={{ my: 2, fontWeight: 'bold' }}>
-            DevLaunch
+            M. Mureed
           </Typography>
           <List>
             {navLinks.map((item) => (

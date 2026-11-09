@@ -6,19 +6,21 @@ import Stack from '@mui/material/Stack'
 import Chip from '@mui/material/Chip'
 import Grid from '@mui/material/Grid'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
+import EmailIcon from '@mui/icons-material/Email'
 import heroImg from '../assets/hero.png'
 
 export default function Hero() {
-  const headline = "Build Faster Modern Web Apps with React"
-  const subtext = "DevLaunch gives developers the tools and reusable components needed to launch production-grade applications in minutes."
+  const greeting = "Hi, I'm Muhammad Mureed"
+  const title = "Computer Science Student & Web Developer"
+  const bio = "Welcome to my portfolio! I specialize in creating responsive, clean web applications with React, Material UI, and modern frontend tools."
 
   return (
-    <Box component="section" id="home" sx={{ bgcolor: '#f0f4f8', py: { xs: 6, md: 10 } }}>
+    <Box component="section" id="about" sx={{ bgcolor: '#f4f6f8', py: { xs: 6, md: 10 } }}>
       <Container maxWidth="lg">
         <Grid container spacing={4} alignItems="center">
           <Grid size={{ xs: 12, md: 7 }}>
             <Chip
-              label="v2.0 Just Released"
+              label="Available for Opportunities"
               color="primary"
               variant="outlined"
               size="small"
@@ -32,15 +34,23 @@ export default function Hero() {
               gutterBottom
               sx={{ fontSize: { xs: '2rem', sm: '2.5rem', md: '3.25rem' } }}
             >
-              {headline}
+              {greeting}
             </Typography>
 
             <Typography
               variant="h6"
-              color="text.secondary"
-              sx={{ mb: 4, fontWeight: 400, fontSize: { xs: '1rem', md: '1.25rem' } }}
+              color="primary"
+              sx={{ mb: 2, fontWeight: 500 }}
             >
-              {subtext}
+              {title}
+            </Typography>
+
+            <Typography
+              variant="body1"
+              color="text.secondary"
+              sx={{ mb: 4, maxWidth: 580, lineHeight: 1.7 }}
+            >
+              {bio}
             </Typography>
 
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
@@ -48,18 +58,19 @@ export default function Hero() {
                 variant="contained"
                 size="large"
                 color="primary"
-                href="#features"
+                href="#projects"
                 endIcon={<ArrowForwardIcon />}
               >
-                Explore Features
+                View My Projects
               </Button>
               <Button
                 variant="outlined"
                 size="large"
                 color="primary"
                 href="#contact"
+                startIcon={<EmailIcon />}
               >
-                Contact Us
+                Get in Touch
               </Button>
             </Stack>
           </Grid>
@@ -68,12 +79,13 @@ export default function Hero() {
             <Box
               component="img"
               src={heroImg}
-              alt="DevLaunch platform illustration showcasing web features"
+              alt="Muhammad Mureed developer avatar illustration"
               sx={{
                 width: '100%',
-                maxWidth: 360,
+                maxWidth: 340,
                 height: 'auto',
-                display: 'inline-block',
+                borderRadius: 4,
+                boxShadow: 2,
               }}
             />
           </Grid>

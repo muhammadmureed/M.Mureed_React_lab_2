@@ -1,4 +1,4 @@
-# React Fundamentals - Lab 02
+# Muhammad Mureed - Personal Portfolio
 
 Student Name: Muhammad Mureed  
 Project Name: M.Mureed_React_lab_2  
@@ -10,23 +10,24 @@ Live URL: **https://muhammadmureed.github.io/M.Mureed_React_lab_2/**
 ## Features & Requirements Fulfilled
 
 1. **Semantic HTML Structure**:
-   - `header`: Built with MUI AppBar and Toolbar
+   - `header`: Built with Material UI AppBar and Toolbar
    - `nav`: Navigation links with mobile Drawer support
-   - `main`: Core content area wrapping all primary sections
-   - `footer`: Footer section with social links and copyright notice
-   - `section`: Semantic sections for Hero, Features, and Contact
+   - `main`: Main container wrapping core portfolio sections
+   - `footer`: Footer with quick navigation, social links, and copyright
+   - `section`: Semantic sections for About, Projects, Skills, and Contact
 
-2. **Multiple Sections**:
-   - **Hero / Intro**: Headline, subtext, call-to-action buttons, and featured illustration
-   - **Features / Services**: Responsive 3-column cards detailing performance, security, and cloud architecture
-   - **Contact**: Interactive contact form with input fields, alerts, and direct contact info cards
+2. **Sections Included**:
+   - **About / Hero**: Personal introduction, developer title, bio, and call-to-action buttons
+   - **Projects**: Portfolio project cards highlighting coursework and technical applications
+   - **Skills**: Categorized overview of technical capabilities across frontend, data, and tools
+   - **Contact**: Interactive contact form and direct communication channels
 
 3. **Responsive Mobile Layout**:
-   - Responsive layouts powered by Material UI Grid and Flexbox
-   - Full mobile screen support with accessible hamburger drawer navigation
+   - Fluid responsive layout using Material UI Grid and Flexbox
+   - Sliding hamburger Drawer navigation for smaller screen widths
 
 4. **Images with Alt Text**:
-   - All visual assets and illustrations feature descriptive `alt` attributes for full accessibility
+   - Profile avatar with descriptive `alt` attribute for accessibility
 
 5. **CI/CD Automatic Production Deployment**:
    - Configured with GitHub Actions workflow (`.github/workflows/deploy.yml`)

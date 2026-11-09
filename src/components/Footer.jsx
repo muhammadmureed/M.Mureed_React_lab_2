@@ -7,7 +7,7 @@ import Divider from '@mui/material/Divider'
 import IconButton from '@mui/material/IconButton'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import TwitterIcon from '@mui/icons-material/Twitter'
+import EmailIcon from '@mui/icons-material/Email'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -24,28 +24,29 @@ export default function Footer() {
         >
           <Box>
             <Typography variant="h6" color="#ffffff" fontWeight="bold">
-              DevLaunch
+              Muhammad Mureed
             </Typography>
             <Typography variant="body2" sx={{ mt: 0.5 }}>
-              The modern React starter toolkit for innovative teams.
+              Computer Science Student & Frontend Developer
             </Typography>
           </Box>
 
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1.5, sm: 3 }}>
-            <Link href="#home" underline="hover" color="inherit">Home</Link>
-            <Link href="#features" underline="hover" color="inherit">Features</Link>
+            <Link href="#about" underline="hover" color="inherit">About</Link>
+            <Link href="#projects" underline="hover" color="inherit">Projects</Link>
+            <Link href="#skills" underline="hover" color="inherit">Skills</Link>
             <Link href="#contact" underline="hover" color="inherit">Contact</Link>
           </Stack>
 
           <Stack direction="row" spacing={1}>
-            <IconButton color="inherit" size="small" aria-label="GitHub" href="https://github.com/muhammadmureed">
+            <IconButton color="inherit" size="small" aria-label="GitHub" href="https://github.com/muhammadmureed" target="_blank" rel="noopener noreferrer">
               <GitHubIcon fontSize="small" />
             </IconButton>
-            <IconButton color="inherit" size="small" aria-label="LinkedIn">
+            <IconButton color="inherit" size="small" aria-label="LinkedIn" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
               <LinkedInIcon fontSize="small" />
             </IconButton>
-            <IconButton color="inherit" size="small" aria-label="Twitter">
-              <TwitterIcon fontSize="small" />
+            <IconButton color="inherit" size="small" aria-label="Email" href="mailto:mureedkhan465@gmail.com">
+              <EmailIcon fontSize="small" />
             </IconButton>
           </Stack>
         </Stack>
@@ -53,7 +54,7 @@ export default function Footer() {
         <Divider sx={{ borderColor: '#374151', mb: 3 }} />
 
         <Typography variant="body2" align="center" color="#6b7280">
-          &copy; {year} DevLaunch. Created by Muhammad Mureed. All rights reserved.
+          &copy; {year} Muhammad Mureed. All rights reserved.
         </Typography>
       </Container>
     </Box>
